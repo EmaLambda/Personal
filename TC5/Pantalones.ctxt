@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Pantalones
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pantalones\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=talla\ bolsillos\ nombre\ cdUso
+comment1.target=Pantalones(java.lang.String,\ int,\ java.lang.String,\ int)
+comment2.params=cdUso
+comment2.target=void\ setCD(int)
+comment3.params=
+comment3.target=int\ getCD()
+comment4.params=
+comment4.target=java.lang.String\ getNombre()
+comment5.params=
+comment5.target=java.lang.String\ getTalla()
+comment6.params=
+comment6.target=int\ getCantidadBolsillos()
+numComments=7
