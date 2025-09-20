@@ -19,13 +19,14 @@ public class Torre {
         int mvy;
         int cerrar;
         String[][] dirTorre = new String[8][8];
-        for (String[] i : dirTorre){
-            for (String j : i){
-                j = "-";
+        for (int i = 0; i < 8; i++){
+            for (int j = 0; j < 8; j++){
+                dirTorre[i][j] = "-";
             }
         }
         // TODO: tiene que hacer el calculo de los movimientos de la torre, tome en cuenta que se puede mover en horizontal y vertical hasta que choque con algo
         // Psst, probablemente sea un par de fors anidados usando todos los atributos
+        dirTorre[posicionX][posicionY] = tabla[posicionX][posicionY];
         for(int[] i : movimientos){
             mvx = posicionX + i[0];
             mvy = posicionY + i[1];
@@ -43,9 +44,10 @@ public class Torre {
         }
 
         // Imprimir la tabla de movimientos de la Torre
+        System.out.println();
         for (String[] i : dirTorre){
             for (String j : i){
-                System.out.printf("\n %s ", j);
+                System.out.printf("%s ", j);
             }
             System.out.println();
         }

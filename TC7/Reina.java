@@ -19,13 +19,14 @@ public class Reina {
         int mvy;
         int cerrar;
         String[][] dirReina = new String[8][8];
-        for (String[] i : dirReina){
-            for (String j : i){
-                j = "-";
+        for (int i = 0; i < 8; i++){
+            for (int j = 0; j < 8; j++){
+                dirReina[i][j] = "-";
             }
         }
         // TODO: tiene que hacer el calculo de los movimientos de la reina, tome en cuenta que se puede mover hacia todos lados hasta que choque con algo
         // Psst, probablemente sea un par de fors anidados usando todos los atributos
+        dirReina[posicionX][posicionY] = tabla[posicionX][posicionY];
         for(int[] i : movimientos){
             mvx = posicionX + i[0];
             mvy = posicionY + i[1];
@@ -43,9 +44,10 @@ public class Reina {
         }
 
         // Imprimir la tabla de movimientos de la Reina
+        System.out.println();        
         for (String[] i : dirReina){
             for (String j : i){
-                System.out.printf("\n %s ", j);
+                System.out.printf("%s ", j);
             }
             System.out.println();
         }

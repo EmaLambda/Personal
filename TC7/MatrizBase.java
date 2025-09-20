@@ -17,9 +17,16 @@ public class MatrizBase {
             // Puede que este por aqui lo que hay que corregir/agregar
             matriz[7][i] = piezas[i];
             matriz[6][i] = "P";
+            for (int j = 2;j < 6; j++) {
+                matriz[j][i] = "-";
+            }
         }
         // TODO: Recibir las coordenadas de la pieza requerida
         // TODO: Calcular la nueva matriz con la pieza elegida
         System.out.println(matriz[6][7]);
+    }
+
+    public String[][] getMatriz(){
+        return matriz;
     }
 }
