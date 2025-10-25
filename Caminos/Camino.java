@@ -21,7 +21,7 @@ public class Camino {
                 CaminoOptimo(nuevoCamino,movx,movy);
             }
         }
-        mapa[x][y] = posOriginal; // La línea no puede ir en el for, pues en un segundo movimiento considera al inicio como desmarcado (bucle).
+        mapa[x][y] = posOriginal; // La línea no puede ir en el for, pues en un segundo movimiento considera al inicio como desmarcado (hay bucle).
     }
     
 
