@@ -18,6 +18,7 @@ public class Canales {
     }
     public Canales(){
         cabeza = null;
+        cola = null;
     }
 
     public boolean estaVacia(){
@@ -27,7 +28,7 @@ public class Canales {
     public void agregar(Youtuber dato){
         Nodo nuevo = new Nodo(dato);
         if (estaVacia()){
-            cabeza = cola = nuevo;
+            cabeza = cola = nuevo; // Visto en video de Youtube justamente
         } else {
             Nodo nodoActual = cabeza;
             while (nodoActual != null && nodoActual.dato.suscriptores >= nuevo.dato.suscriptores) { 
@@ -63,7 +64,7 @@ public class Canales {
                 }
             }
         } else {
-            System.out.println("La lista está vacía.");
+            System.out.println("No hay canales.");
         }
     }
     
@@ -94,7 +95,7 @@ public class Canales {
                 System.out.println("No se encontró el canal.");
             }
         } else {
-            System.out.println("La lista está vacía.");
+            System.out.println("No tienes canales suscritos.");
         }
     }
 
